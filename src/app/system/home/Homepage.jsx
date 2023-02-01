@@ -3,6 +3,7 @@ import SectionTwo from '@/components/organism/SectionTwo';
 import SectionThree from '@/components/organism/SectionThree';
 import Navbar from '@/components/Navbar';
 import { Flex, Spacer, Box, Heading, ButtonGroup, Button } from '@chakra-ui/react'
+import Newsletter from '@/components/organism/Newsletter';
 
 const Homepage = () => {
     return ( 
@@ -31,6 +32,9 @@ const Homepage = () => {
           btnGreentext={"Get Started"}
           btngreenLink={"#"}
           />
+          <Newsletter
+          headingText={"Subscribe to Our Newsletter"}
+          paraText={"Don't miss out on health updates! Dont worry we will not spam you."} />
 
         </Box>
        </Box>

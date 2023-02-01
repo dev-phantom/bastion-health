@@ -18,7 +18,7 @@ const Main = ({ imgLink,
                             align={'center'}           
                         >
                             <VStack w={"50%"} justify={"start"} align={"start"}>
-                                <Typography headingText={headingText} paraText={paraText} />
+                                <Typography headingText={headingText} headingWidth={"80%"} fontSize={"6xl"} paraText={paraText} paraWidth={"75%"} />
                                 <Flex justify={"start"} align={"start"}>
                                    <Buttons 
                                     btnAltLink={btnAltLink} 

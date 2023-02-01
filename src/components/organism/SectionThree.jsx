@@ -11,7 +11,7 @@ const sectionThree = (
     return ( 
         <Box w={"100%"} 
         className={"bg-secondary"} 
-        my={20} 
+        mt={20} 
         borderRadius={"40px"} 
         py={20}
         color={"#141414"}
@@ -22,7 +22,7 @@ const sectionThree = (
             pl={10}    
         >
             <VStack w={"58%"} justify={"start"} align={"start"}>
-                <Typography headingText={headingText} paraText={paraText} />
+                <Typography headingText={headingText} paraWidth={"75%"} headingWidth={"80%"} fontSize={"6xl"} paraText={paraText} />
                 <Flex justify={"start"} align={"start"}>
                     <Buttons 
                         btnGreentext={btnGreentext} 

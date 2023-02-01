@@ -22,7 +22,7 @@ const SectionTwo = (
             pl={10}    
         >
             <VStack w={"68%"} justify={"start"} align={"start"}>
-                <Typography headingText={headingText} paraText={paraText} />
+                <Typography headingText={headingText} paraWidth={"75%"} headingWidth={"80%"} fontSize={"6xl"} paraText={paraText} />
                 <Flex justify={"start"} align={"start"}>
                     <Buttons 
                         btnGreentext={btnGreentext} 
