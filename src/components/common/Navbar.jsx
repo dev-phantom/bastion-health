@@ -53,11 +53,11 @@ export default function Navbar() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
          <Flex justify={"start"}>
-           <Image 
-          src="https://res.cloudinary.com/phantom1245/image/upload/v1675097787/bastion-health/logo_1_n854bv.png"
-          alt="logo"
-          width={120}
-          height={120}
+          <Image 
+            src="https://res.cloudinary.com/phantom1245/image/upload/v1675097787/bastion-health/logo_1_n854bv.png"
+            alt="logo"
+            width={120}
+            height={120}
           />
          </Flex>
             <Spacer/>

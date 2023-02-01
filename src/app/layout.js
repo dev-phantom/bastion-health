@@ -1,6 +1,6 @@
 "use client"
 import './globals.css'
-import Header from '@/components/Header'
+import Header from '@/components/common/Header'
 import { ChakraProvider } from '@chakra-ui/react'
 
 export default function RootLayout({ children }) {
