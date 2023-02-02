@@ -14,11 +14,12 @@ module.exports = {
         textColor: "#141414",
         primary: "#0E563F",
         secondary: "rgba(14, 86, 63, 0.05)"
-      }
+      },
     },
     fontFamily: {
       primary: 'heldane',
     },
+    
   },
   plugins: [],
 }

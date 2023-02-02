@@ -17,7 +17,7 @@ const Homepage = () => {
             btnGreentext={"See Our Plans"}
             btngreenLink={"/Healthplan"}
             btnAlttext={"Read our Blog"}
-            btnAltLink={"#"}
+            btnAltLink={"/Blogs"}
             btnVisibility={"visible"}
             imgLink={"https://res.cloudinary.com/phantom1245/image/upload/v1675097789/bastion-health/HERO_gib2ih.png"}
             imgAlt={"testin alt"}

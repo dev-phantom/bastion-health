@@ -24,3 +24,12 @@ export const plans =[
         color: "#141414"
     }
 ]
+
+export const slides =[
+    {
+        id:1,
+        bgImg: "https://res.cloudinary.com/phantom1245/image/upload/v1675356024/bastion-health/Rectangle_23_1_kjcouo.png",
+        blogTitle: "The power of routines a healthy home",
+        author: "Arlene McCoy"
+    }
+]
