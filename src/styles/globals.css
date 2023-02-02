@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: heldane;
+  src: url("../assets/fonts/TestHeldaneDisplay-Regular.otf");
+}
