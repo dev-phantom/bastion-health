@@ -10,7 +10,8 @@ const Main = ({ imgLink,
                 btnGreentext, 
                 btngreenLink, 
                 btnAlttext, 
-                btnAltLink
+                btnAltLink,
+                btnVisibility,
             }) => {
                 return ( 
                     <Box>
@@ -18,11 +19,12 @@ const Main = ({ imgLink,
                             align={'center'}           
                         >
                             <VStack w={"50%"} justify={"start"} align={"start"}>
-                                <Typography headingText={headingText} headingWidth={"80%"} fontSize={"6xl"} paraText={paraText} paraWidth={"75%"} />
+                                <Typography headingText={headingText} headingWidth={"90%"} fontSize={"6xl"} paraText={paraText} paraWidth={"75%"} />
                                 <Flex justify={"start"} align={"start"}>
                                    <Buttons 
                                     btnAltLink={btnAltLink} 
                                     btnAlttext={btnAlttext} 
+                                    btnVisibility={btnVisibility}
                                     bgColor={'#0E563F'}
                                     btnColor={"white"}
                                     btnGreentext={btnGreentext} 

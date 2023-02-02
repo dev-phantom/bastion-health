@@ -15,9 +15,10 @@ const Homepage = () => {
             headingText={"Get health insurance that just makes sense"}
             paraText={"At Bastion we are working towards a healthier Nigeria, bringing greater convenience to healthcare access. We have carefully designed an array of healthcare plans that ensures there is something for everyone."}
             btnGreentext={"See Our Plans"}
-            btngreenLink={"/system/healthPlans/HealthPlan"}
+            btngreenLink={"/Healthplan"}
             btnAlttext={"Read our Blog"}
             btnAltLink={"#"}
+            btnVisibility={"visible"}
             imgLink={"https://res.cloudinary.com/phantom1245/image/upload/v1675097789/bastion-health/HERO_gib2ih.png"}
             imgAlt={"testin alt"}
           />
