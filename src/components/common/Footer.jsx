@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import {
   Box,
   Container,
@@ -28,7 +26,7 @@ const Logo = () => {
 
 const ListHeader = ({ children }) => {
   return (
-    <Text fontWeight={'500'} fontSize={'lg'} mb={2} fontFamily={"heldane"} >
+    <Text fontWeight={'500'} color={"#141414"} fontSize={'lg'} mb={2} fontFamily={"heldane"} >
       {children}
     </Text>
   );
@@ -37,40 +35,42 @@ const ListHeader = ({ children }) => {
 export default function Footer() {
   return (
     <Box
-      color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW={'20xl'} py={10}>
+      color={useColorModeValue('gray.700', 'gray.200')}
+      w={"full"}
+       >
+      <Container as={Stack} maxW={'40xl'} py={10}>
         <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
-          spacing={8}>
+          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr ' }}
+          >
           <Stack spacing={6}>
             <Box>
               <Logo color={useColorModeValue('gray.700', 'white')} />
             </Box>
-            <Text fontSize={'sm'} pr={15}>
-              Our mission is to make good healthcare, accessible and affordable.
+            <Text fontSize={'sm'} >
+              Our mission is to make good <br /> healthcare, accessible and affordable.
             </Text>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Helpful Links</ListHeader>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>About Us</Link>
-            <Link href={'#'}>Contact</Link>
-            <Link href={'#'}>Health Plans</Link>
-            <Link href={'#'}>Wellness & Lifestyle</Link>
+            <Link href={'/'} _hover={{textDecoration:"none"}}>Home</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>About Us</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>Contact</Link>
+            <Link href={'/Healthplan'} _hover={{textDecoration:"none"}}>Health Plans</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>Wellness & Lifestyle</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Site Map</ListHeader>
-            <Link href={'#'}>Our Mobile App</Link>
-            <Link href={'#'}>Product Comparison</Link>
-            <Link href={'#'}>Hospital Network</Link>
-            <Link href={'#'}>Our Partners</Link>
-            <Link href={'#'}>Terms and Conditions</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>Our Mobile App</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>Product Comparison</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>Hospital Network</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>Our Partners</Link>
+            <Link href={'#'} _hover={{textDecoration:"none"}}>Terms and Conditions</Link>
           </Stack>
           <Stack >
             <ListHeader>Contact Us</ListHeader>
-            <Typography paraText={"2nd Floor, Union Bank Building, 1 Adeola Odeku street. Victoria Island, Lagos. Nigeria."} /> 
+            <Typography paraWidth={"100%"} paraText={"2nd Floor, Union Bank Building, 1 Adeola Odeku street. Victoria Island, Lagos. Nigeria."} /> 
             <SocialIcons />
-            <Link href={'mailto:wecare@bastionhmo.com'}>
+            <Link _hover={{textDecoration:"none"}} href={'mailto:wecare@bastionhmo.com'}>
                 wecare@bastionhmo.com
             </Link>
 
