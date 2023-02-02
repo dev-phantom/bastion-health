@@ -9,6 +9,7 @@ const Inputs = ({placeholder}) => {
             pr='4.5rem'
             bg={"white"}
             h={"55px"}
+            color={"#141414"}
             borderRadius={"100px"}
         />
      );
