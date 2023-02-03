@@ -3,6 +3,7 @@ import { Flex, Spacer, Box, Heading, ButtonGroup, Button } from '@chakra-ui/reac
 import Newsletter from '@/components/organism/Newsletter';
 import Footer from '@/components/common/Footer';
 import ImageSlider from '@/components/organism/ImageSlider';
+import Blogs from '@/components/organism/Blogs';
 
 const Blog = () => {
     return(
@@ -24,6 +25,7 @@ const Blog = () => {
           <Box 
             px={{ base: 20 }}
           >
+            <Blogs />
             <Newsletter
               headingText={"Subscribe to Our Newsletter"}
               paraText={"Don't miss out on health updates! Dont worry we will not spam you."} 

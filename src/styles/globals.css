@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding:0;
+}
 
 @font-face {
   font-family: heldane;
   src: url("../assets/fonts/TestHeldaneDisplay-Regular.otf");
 }
+
 @layer components {
 .des {
     margin: 0 auto;
@@ -49,5 +54,4 @@
       -webkit-clip-path: ellipse(50% 60% at 50% 100%);
       clip-path: ellipse(50% 60% at 50% 100%);
   }
-
 }

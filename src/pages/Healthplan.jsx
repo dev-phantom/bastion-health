@@ -1,7 +1,7 @@
-import Homepage from '@/system/home/Homepage'
+import Homepage from '@/pages/system/home/Homepage'
 import Header from '@/components/common/Header'
 import Head from 'next/head'
-import HealthPlan from '@/system/HealthPlan/HealthPlan'
+import HealthPlan from '@/pages/system/HealthPlan/HealthPlan'
 
 
 export default function Home() {
