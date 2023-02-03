@@ -1,6 +1,7 @@
-import { Flex, Spacer, Box, Heading, ButtonGroup, Grid, GridItem } from '@chakra-ui/react'
+import { Flex, Box, Heading, Grid } from '@chakra-ui/react'
 import Images from '../atoms/Images';
-
+import {slides} from '@/data/Data'
+import Typography from '../molecules/Typography';
 const ImageSlider = () => {
     return ( 
         <Box
@@ -12,71 +13,36 @@ const ImageSlider = () => {
             gap={6}
             overflowX={"scroll"}
             >
+            {slides.map((slide) => {
+                return(
+                <Flex 
+                    key={slide.id}
+                    backgroundImage={slide.bgImg}
+                    backgroundRepeat={"no-repeat"}
+                    backgroundSize={"cover"}
+                    height={"550px"}
+                    align={"center"}
+                    justify={"center"}
+                    width={"402px"}
+                    
+                >
+                    <Flex flexDirection={"column"} justifyContent={"center"} align={"center"} px={20}>
+                        <Heading 
+                        py={10}
+                        textAlign={"center"}
+                        fontFamily={"heldane"} 
+                        fontSize={"24px"}
+                        color={"#141414"}
+                        fontWeight={"normal"}
+                        >
+                         {slide.blogTitle}
+                        </Heading>
+                        <Typography paraText={slide.author} />
+                    </Flex>
+                </Flex>
+                )
+            })}
                 
-                <GridItem 
-                backgroundImage={"https://res.cloudinary.com/phantom1245/image/upload/v1675356024/bastion-health/Rectangle_23_1_kjcouo.png"}
-                backgroundRepeat={"no-repeat"}
-                backgroundSize={"cover"}
-                height={"550px"}
-                width={"402px"}
-
-                >
-                    test
-                </GridItem>
-                <GridItem 
-                backgroundImage={"https://res.cloudinary.com/phantom1245/image/upload/v1675356024/bastion-health/Rectangle_23_t4nm5m.png"}
-                backgroundRepeat={"no-repeat"}
-                backgroundSize={"cover"}
-                height={"550px"}
-                width={"402px"}
-
-                >
-                    test
-                </GridItem>
-                
-                <GridItem 
-                backgroundImage={"https://res.cloudinary.com/phantom1245/image/upload/v1675356026/bastion-health/COVER_vvhg11.png"}
-                backgroundRepeat={"no-repeat"}
-                backgroundSize={"cover"}
-                height={"550px"}
-                width={"402px"}
-
-                >
-                    test
-                </GridItem>
-                
-                <GridItem 
-                backgroundImage={"https://res.cloudinary.com/phantom1245/image/upload/v1675356024/bastion-health/Rectangle_23_1_kjcouo.png"}
-                backgroundRepeat={"no-repeat"}
-                backgroundSize={"cover"}
-                height={"550px"}
-                width={"402px"}
-
-                >
-                    test
-                </GridItem>
-                
-                <GridItem 
-                backgroundImage={"https://res.cloudinary.com/phantom1245/image/upload/v1675356024/bastion-health/Rectangle_23_1_kjcouo.png"}
-                backgroundRepeat={"no-repeat"}
-                backgroundSize={"cover"}
-                height={"550px"}
-                width={"402px"}
-
-                >
-                    test
-                </GridItem>
-                
-                <GridItem 
-                backgroundImage={"https://res.cloudinary.com/phantom1245/image/upload/v1675356024/bastion-health/Rectangle_23_1_kjcouo.png"}
-                backgroundRepeat={"no-repeat"}
-                backgroundSize={"cover"}
-                height={"550px"}
-                width={"402px"}
-
-                >
-                    test
-                </GridItem>
             </Grid>
             <Box className={"des"} w={"full"}></Box>
 
