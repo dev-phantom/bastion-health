@@ -1,5 +1,4 @@
 import Homepage from '@/pages/system/home/Homepage'
-import Header from '@/components/common/Header'
 import Head from 'next/head'
 import HealthPlan from '@/pages/system/HealthPlan/HealthPlan'
 
@@ -13,7 +12,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+
       <HealthPlan />
     </>
   )

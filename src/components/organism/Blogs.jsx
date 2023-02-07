@@ -1,7 +1,6 @@
 import { Flex, Box, Heading, Grid, VStack, Text, HStack } from '@chakra-ui/react'
 import { blogs } from '@/data/Data';
 import Images from '../atoms/Images';
-import Typography from '../molecules/Typography';
 const Blogs = () => {
     return ( 
         <Flex as="flex" justify={"space-between"} w={"full"}>
@@ -11,7 +10,7 @@ const Blogs = () => {
                         <Box 
                         key={blog.id}
                         as={"a"} 
-                        href={"#"}
+                        href={"/system/Blog/" + blog.id}
                         >
                             <VStack w={"350px"} justify={"start"} align={"start"}>
                                 <Images imgAlt={"blogImg"} imgLink={blog.blogImg} width={350} height={350} className={"rounded-t-lg"}/>
