@@ -13,7 +13,6 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Index() {
     const [loading, setLoading] = useState(true)
     const [newData, setNewData] = useState({})
-    const [newObj, setNewObj] = useState({})
 
   //Set up SWR to run the fetcher function when calling "/api/staticdata"
   //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
@@ -22,32 +21,26 @@ export default function Index() {
   //Handle the error state
   if (error) return <div>Failed to load</div>;
   //Handle the loading state
+  	// eslint-disable-next-line react-hooks/rules-of-hooks
   	useEffect(()=>{
 		  if (!data || typeof(data) == "undefined" || null ) {
-        console.log("ran ere")
         setLoading(true)
       }
       else if(typeof(data) == "string"){
-        console.log("ran whrere")
         setLoading(true)
-        setNewData(data)
-      }
-        
+        setNewData(JSON.parse(data))
+        setLoading(false)
 
-	}, [data])
-useEffect(()=>{
-  if(typeof(newData) == "object"){
-    setLoading(true)
-    console.log("am empty")
-  }
-  else if(typeof(newData) == "string"){
-    setLoading(false)
-    setNewObj(JSON.parse(newData))
-  }
-	}, [newData])
+      }
+ 
+      else{
+        setLoading(true)
+      }
+      
+
+	}, [data, newData])
   
-  
-    console.log(newObj)
+
 
 
   //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
@@ -66,7 +59,7 @@ useEffect(()=>{
                 ) : (
                     <div>
                       {
-                        newObj.record.name
+                        newData.record.name
                       }
                     </div>
                 )
