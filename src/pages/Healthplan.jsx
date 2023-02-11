@@ -1,6 +1,6 @@
-import Homepage from '@/pages/system/home/Homepage'
-import Head from 'next/head'
-import HealthPlan from '@/pages/system/HealthPlan/HealthPlan'
+import Homepage from "@/pages/system/home/Homepage";
+import Head from "next/head";
+import HealthPlan from "@/pages/system/HealthPlan/HealthPlan";
 
 
 export default function Home() {
@@ -15,5 +15,5 @@ export default function Home() {
 
       <HealthPlan />
     </>
-  )
+  );
 }
