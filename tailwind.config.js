@@ -6,7 +6,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
  
     // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -14,12 +14,12 @@ module.exports = {
         textColor: "#141414",
         primary: "#0E563F",
         secondary: "rgba(14, 86, 63, 0.05)"
-      },
+      }
     },
     fontFamily: {
-      primary: 'heldane',
-    },
+      primary: "heldane"
+    }
     
   },
-  plugins: [],
-}
+  plugins: []
+};

@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Blog from '@/pages/system/Blog/Blog'
+import Head from "next/head";
+import Blog from "@/pages/system/Blog/Blog";
 
 
 
@@ -14,5 +14,5 @@ export default function Blogs() {
       </Head>
       <Blog />
     </div>
-  )
+  );
 }
