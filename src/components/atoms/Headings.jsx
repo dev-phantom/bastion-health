@@ -1,11 +1,12 @@
 import { Box, Heading,Text } from "@chakra-ui/react";
 
-const Headings = ({headingText, color,fontSize, headingTextAlign, headingWidth}) => {
+const Headings = ({headingText, fontSize, headingTextAlign, headingWidth, props}) => {
   return ( 
     <Box>
       <Heading 
+        {...props}
         as={"h1"} 
-        color={color} 
+        
         textAlign={headingTextAlign} 
         fontSize={fontSize} 
         lineHeight={"80px"} 
