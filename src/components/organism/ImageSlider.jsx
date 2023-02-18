@@ -19,6 +19,7 @@ const ImageSlider = () => {
               key={slide.id}
               backgroundImage={slide.bgImg}
               backgroundRepeat={"no-repeat"}
+              bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
               backgroundSize={"cover"}
               height={"550px"}
               align={"center"}

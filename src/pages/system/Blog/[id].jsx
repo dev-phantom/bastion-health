@@ -27,6 +27,7 @@ const Index = () => {
     return <Loading />;
   }
   let data = blogs[blogId];
+
   return ( 
     <div>
       <Head>
