@@ -1,14 +1,11 @@
 import Main from "@/components/organism/Main";
-
-import Navbar from "@/components/common/Navbar";
 import { Flex, Spacer, Box, Heading, ButtonGroup, Button } from "@chakra-ui/react";
-import Newsletter from "@/components/organism/Newsletter";
-import Footer from "@/components/common/Footer";
 import Plans from "@/components/organism/Plans";
+import DefaultLayout from "@/layout/defaultLayout";
+
 const HealthPlan = () => {
   return ( 
-    <Box>
-      <Navbar/>
+    <DefaultLayout>
       <Box px={{ base: 20 }} gap={8}>
         <Main 
           headingText={"Get Affordable Health Plans with Bastion"}
@@ -18,13 +15,9 @@ const HealthPlan = () => {
           imgAlt={"testin alt"}
         />
         <Plans />
-        <Newsletter
-          headingText={"Subscribe to Our Newsletter"}
-          paraText={"Don't miss out on health updates! Dont worry we will not spam you."} 
-        />
-        <Footer />
+
       </Box>
-    </Box>
+    </DefaultLayout>
   );
 };
  

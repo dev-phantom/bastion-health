@@ -1,15 +1,12 @@
 import Main from "@/components/organism/Main";
 import SectionTwo from "@/components/organism/SectionTwo";
 import SectionThree from "@/components/organism/SectionThree";
-import Navbar from "@/components/common/Navbar";
-import { Flex, Spacer, Box, Heading, ButtonGroup, Button } from "@chakra-ui/react";
-import Newsletter from "@/components/organism/Newsletter";
-import Footer from "@/components/common/Footer";
+import { Box } from "@chakra-ui/react";
+import DefaultLayout from "@/layout/defaultLayout";
 
 const Homepage = () => {
   return ( 
-    <Box>
-      <Navbar/>
+    <DefaultLayout>
       <Box px={{ base: 20 }} gap={8}>
         <Main 
           headingText={"Get health insurance that just makes sense"}
@@ -34,13 +31,9 @@ const Homepage = () => {
           btnGreentext={"Get Started"}
           btngreenLink={"#"}
         />
-        <Newsletter
-          headingText={"Subscribe to Our Newsletter"}
-          paraText={"Don't miss out on health updates! Dont worry we will not spam you."} 
-        />
-        <Footer />
+        
       </Box>
-    </Box>
+    </DefaultLayout>
   );
 };
  

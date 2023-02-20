@@ -19,7 +19,7 @@ const ImageSlider = () => {
               key={slide.id}
               backgroundImage={slide.bgImg}
               backgroundRepeat={"no-repeat"}
-              bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
+              
               backgroundSize={"cover"}
               height={"550px"}
               align={"center"}
@@ -27,13 +27,13 @@ const ImageSlider = () => {
               width={"402px"}
                     
             >
-              <Flex flexDirection={"column"} justifyContent={"center"} align={"center"} px={20}>
+              <Flex color={"white"} bgGradient={"linear(to-r, blackAlpha.600, transparent)"} h={"full"} flexDirection={"column"} justifyContent={"center"} align={"center"} px={14}>
                 <Heading 
                   py={10}
                   textAlign={"center"}
                   fontFamily={"heldane"} 
-                  fontSize={"24px"}
-                  color={"#141414"}
+                  fontSize={"30px"}
+                  
                   fontWeight={"normal"}
                 >
                   {slide.blogTitle}
