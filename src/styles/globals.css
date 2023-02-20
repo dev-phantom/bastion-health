@@ -12,8 +12,8 @@
   font-family: heldane;
   src: url("../assets/fonts/TestHeldaneDisplay-Regular.otf");
 }
-
 @layer components {
+
 .des {
     margin: 0 auto;
     width: 500px;
@@ -21,6 +21,7 @@
     position: relative;
     bottom:6rem;
     overflow: hidden;
+    
   }
 
   .des:after {

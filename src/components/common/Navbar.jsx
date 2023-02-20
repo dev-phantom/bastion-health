@@ -85,6 +85,9 @@ export default function Navbar() {
             py={4}
             color={"white"}
             borderRadius={"100px"}
+            _hover={{
+              textDecoration: "none"
+            }}
           >
             Download App
           </Button>

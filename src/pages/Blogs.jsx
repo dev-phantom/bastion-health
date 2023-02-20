@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Blog from "@/pages/system/Blog/Blog";
+import Blog from "@/pages/Blog/Blog";
 
 
 

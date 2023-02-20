@@ -65,7 +65,7 @@ const Index = () => {
                     <Avatar name="Praise Dominic" src="https://bit.ly/dan-abramov" />
                     <VStack justify={"flex-start"} display={"flex"} align={"start"}>
                       <Text fontWeight={700} fontSize={"20px"} fontFamily={"DM Sans"}>Praise Dominic</Text>
-                      <Text color={"#141414"} fontFamily={"DM Sans"}>Health Consultant</Text>
+                      <Text color={"#141414"} fontFamily={"DM Sans"} lineHeight={"1px"}>Health Consultant</Text>
                     </VStack>
                   </WrapItem>
                 </Wrap>
