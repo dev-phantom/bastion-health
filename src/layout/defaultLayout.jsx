@@ -13,11 +13,13 @@ const DefaultLayout = ({ children }) => {
       <main>
         {children}
       </main>
-      <Newsletter
-        headingText={"Subscribe to Our Newsletter"}
-        paraText={"Don't miss out on health updates! Dont worry we will not spam you."} 
-      />
-      <Footer />
+      <Box px={{ base: 20 }} gap={8}>
+        <Newsletter
+          headingText={"Subscribe to Our Newsletter"}
+          paraText={"Don't miss out on health updates! Dont worry we will not spam you."} 
+        />
+        <Footer />
+      </Box>
     </>
   );
 };

@@ -11,7 +11,7 @@ const Blogs = () => {
             <Box 
               as={"a"}
               key={blog.id}
-              href={"/system/Blog/" + blog.id}
+              href={"/Blog/" + blog.id}
             >
               <VStack w={"350px"} justify={"start"} align={"start"}>
                 <Images imgAlt={"blogImg"} imgLink={blog.blogImg} width={350} height={350} className={"rounded-t-lg"}/>
