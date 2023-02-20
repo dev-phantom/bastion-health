@@ -76,10 +76,10 @@ export default function Navbar() {
           spacing={6}>
           <Button
             as={"a"}
+            href={"/download"}
             fontSize={"sm"}
             fontWeight={400}
             variant={"link"}
-            href={"#"}
             bg={"#0E563F"}
             px={10}
             py={4}
