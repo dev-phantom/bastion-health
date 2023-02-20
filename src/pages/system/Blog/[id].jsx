@@ -3,7 +3,9 @@ import { useRouter } from "next/router";
 import Navbar from "@/components/common/Navbar";
 import { blogs } from "@/data/Data";
 import Headings from "@/components/atoms/Headings";
-import { Box, Image, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Image, HStack, Text, VStack, Wrap, WrapItem, Avatar, Flex } from "@chakra-ui/react";
+import SocialIcons from "@/components/molecules/SocialIcons";
+import DefaultLayout from "@/layout/defaultLayout";
 
 export const Loading = () => {
 
@@ -27,6 +29,7 @@ const Index = () => {
     return <Loading />;
   }
   let data = blogs[blogId];
+
   return ( 
     <div>
       <Head>
@@ -35,34 +38,78 @@ const Index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      
       <Box 
         px={{ base: 20 }}
       >
-        <Box>
-          <Image src={data.blogImg} alt={"blog-image"} w={"100%"} h={"450px"} borderRadius={"20px"} />
-        </Box>
-        <HStack fontSize={"14px"} spacing={3} fontWeight={"medium"} py={8}>
-          <Text >
-            {data.date}
-          </Text>
-          <Text fontWeight={"extrabold"} fontSize={"20px"}>.</Text>
-          <Text>
-            {data.readTime}
-          </Text>
-        </HStack>
-        
-        <Headings color={"red.900"} headingWidth={"100%"} fontSize={"48px"}  py={10} headingText={data.blogTitle}/>
-        <Box>
-          <HStack>
-            <VStack>
-
-            </VStack>
-            <VStack>
-              
-            </VStack>
+        <DefaultLayout>
+          <Box>
+            <Image src={data.blogImg} alt={"blog-image"} w={"100%"} h={"450px"} borderRadius={"20px"} />
+          </Box>
+          <HStack fontSize={"14px"} spacing={3} fontWeight={"medium"} py={8}>
+            <Text >
+              {data.date}
+            </Text>
+            <Text fontWeight={"extrabold"} fontSize={"20px"}>.</Text>
+            <Text>
+              {data.readTime}
+            </Text>
           </HStack>
-        </Box>
+        
+          <Headings color={"red.900"} headingWidth={"100%"} fontSize={"48px"}  py={10} headingText={data.blogTitle}/>
+          <Box>
+            <HStack justify={"flex-start"} display={"flex"} align={"flex-start"} mt={10}>
+              <VStack w={"50%"} justify={"flex-start"} flexDirection={"column"} display={"flex"} align={"flex-start"}>
+                <Wrap >
+                  <WrapItem gap={3} >
+                    <Avatar name="Praise Dominic" src="https://bit.ly/dan-abramov" />
+                    <VStack justify={"flex-start"} display={"flex"} align={"start"}>
+                      <Text fontWeight={700} fontSize={"20px"} fontFamily={"DM Sans"}>Praise Dominic</Text>
+                      <Text color={"#141414"} fontFamily={"DM Sans"}>Health Consultant</Text>
+                    </VStack>
+                  </WrapItem>
+                </Wrap>
+                <Box  pt={7}>
+                  <Text color={"#141414"} fontFamily={"DM Sans"} fontWeight={700} fontSize={"18px"}>Category</Text>
+                  <HStack pt={4}>
+                    <Flex justify={"center"} align={"center"} px={5} py={2} borderRadius={"5px"} className={"bg-opacity-10 bg-[#F38704]"}>
+                      <Text color={"#F38704"} fontWeight={500}>Health</Text>
+                    </Flex>
+                    <Flex justify={"center"} align={"center"} px={5} py={2} borderRadius={"5px"} className={"bg-opacity-10 bg-[#6F6FBA]"}>
+                      <Text color={"#6F6FBA"} fontWeight={500}>Health</Text>
+                    </Flex>
+                  </HStack>
+
+                </Box>
+                <Box  pt={7}>
+                  <Text color={"#141414"} fontFamily={"DM Sans"} fontWeight={700} fontSize={"18px"}>Share This Article</Text>
+                  <HStack pt={4}>
+                    <SocialIcons/>
+                  </HStack>
+
+                </Box>
+              </VStack>
+              <VStack pl={6} gap={10} fontSize={"20px"} color={"#141414"} lineHeight={"45px"} fontWeight={400}>
+                <Text>Diabetis is a serious health condition and symptoms can vary widely. 
+                Although there are several common symptoms of diabetes there are some subtle, 
+                early signs that should be looked out for. Often the early signs of diabetes are 
+                put down to minor health conditions or changes in lifestyle and diet.
+                </Text>
+                <Text>Diabetis is a serious health condition and symptoms can vary widely. 
+                Although there are several common symptoms of diabetes there are some subtle, 
+                early signs that should be looked out for. Often the early signs of diabetes are 
+                put down to minor health conditions or changes in lifestyle and diet.
+                </Text>
+                <Text>Diabetis is a serious health condition and symptoms can vary widely. 
+                Although there are several common symptoms of diabetes there are some subtle, 
+                early signs that should be looked out for. Often the early signs of diabetes are 
+                put down to minor health conditions or changes in lifestyle and diet.
+                </Text>
+              
+              </VStack>
+            </HStack>
+          </Box>
+        </DefaultLayout>
       </Box>
     </div>
   );

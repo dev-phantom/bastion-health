@@ -4,11 +4,11 @@ import Newsletter from "@/components/organism/Newsletter";
 import Footer from "@/components/common/Footer";
 import ImageSlider from "@/components/organism/ImageSlider";
 import Blogs from "@/components/organism/Blogs";
+import DefaultLayout from "@/layout/defaultLayout";
 
 const Blog = () => {
   return(
-    <Box>
-      <Navbar/>
+    <DefaultLayout>
       <Box gap={8}>
         <Heading 
           pt={10}
@@ -26,15 +26,9 @@ const Blog = () => {
           px={{ base: 20 }}
         >
           <Blogs />
-          <Newsletter
-            headingText={"Subscribe to Our Newsletter"}
-            paraText={"Don't miss out on health updates! Dont worry we will not spam you."} 
-          />
-          <Footer />
         </Box>
-          
       </Box>
-    </Box>
+    </DefaultLayout>
   );
 };
 
