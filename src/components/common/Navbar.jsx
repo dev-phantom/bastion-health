@@ -29,19 +29,28 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box w={"full"}>
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 8 }}
-        px={{ base: 20 }}
+        px={{ base: 5, md: 20 }}
         align={"center"}
       >
+        <Flex as={"a"} href={"/"} justify={"start"}>
+          <Image
+            src="https://res.cloudinary.com/phantom1245/image/upload/v1675097787/bastion-health/logo_1_n854bv.png"
+            alt="logo"
+            width={120}
+            height={120}
+          />
+        </Flex>
         <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}>
+          flex={{ base: 1, md: 0 }}
+          justify={"end"}
+          display={{ base: "flex", md: "none" }}
+        >
           <IconButton
             onClick={onToggle}
             icon={
@@ -51,29 +60,29 @@ export default function Navbar() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }} >
-          <Flex as={"a"} href={"/"} justify={"start"}>
-            <Image 
-              src="https://res.cloudinary.com/phantom1245/image/upload/v1675097787/bastion-health/logo_1_n854bv.png"
-              alt="logo"
-              width={120}
-              height={120}
-            />
-          </Flex>
-          <Spacer/>
-          <Flex display={{ base: "none", md: "flex" }} align={"center"} justifyContent={"center"}>
-            
+        <Flex
+          display={{ base: "none", md: "flex" }}
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "start" }}
+        >
+          <Spacer />
+          <Flex
+            display={{ base: "none", md: "flex" }}
+            align={"center"}
+            justifyContent={"center"}
+          >
             <DesktopNav />
-            
           </Flex>
-          <Spacer/>
+          <Spacer />
         </Flex>
 
         <Stack
+          display={{ base: "none", md: "flex" }}
           flex={{ base: 1, md: 0 }}
           justify={"flex-end"}
           direction={"row"}
-          spacing={6}>
+          spacing={6}
+        >
           <Button
             as={"a"}
             href={"/download"}

@@ -9,7 +9,7 @@ const Buttons = ({btnAltLink,
   btnVisibility 
 }) => {
   return ( 
-    <HStack gap={10} pt={1}>
+    <HStack gap={{base:5, md:10}} pt={1}>
       <Button 
         as={"a"} 
         borderRadius={"100px"} 
@@ -18,8 +18,8 @@ const Buttons = ({btnAltLink,
         bg={bgColor} 
         color={btnColor} 
         variant="solid" 
-        py={6} 
-        px={10}
+        py={{base:4, md:6}} 
+        px={{base:5, md:10}}
         _hover={{
           textDecoration: "none",
           bg: bgColor
