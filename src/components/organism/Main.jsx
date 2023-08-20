@@ -16,10 +16,11 @@ const Main = ({ imgLink,
   return ( 
     <Box>
       <Flex                    
-        align={"center"}           
+        align={"center"} 
+        direction={{base:"column", md:"row"}}          
       >
-        <VStack w={"50%"} justify={"start"} align={"start"}>
-          <Typography headingText={headingText} headingWidth={"90%"} fontSize={"6xl"} paraText={paraText} paraWidth={"75%"} />
+        <VStack w={{base:"90%", md:"50%"}} justify={"start"} align={"start"}>
+          <Typography headingText={headingText} headingWidth={{md:"90%"}} fontSize={{base:"4xl", md:"6xl"}} paraText={paraText} paraWidth={{base:"85%", md:"75%"}} />
           <Flex justify={"start"} align={"start"}>
             <Buttons 
               btnAltLink={btnAltLink} 

@@ -7,7 +7,7 @@ import DefaultLayout from "@/layout/defaultLayout";
 const Homepage = () => {
   return ( 
     <DefaultLayout>
-      <Box px={{ base: 20 }} gap={8}>
+      <Box px={{ base:5, md: 20 }} gap={8}>
         <Main 
           headingText={"Get health insurance that just makes sense"}
           paraText={"At Bastion we are working towards a healthier Nigeria, bringing greater convenience to healthcare access. We have carefully designed an array of healthcare plans that ensures there is something for everyone."}

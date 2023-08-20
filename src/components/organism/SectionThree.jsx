@@ -8,28 +8,31 @@ const sectionThree = (
     btngreenLink
   }
 ) => {
-  return ( 
-    <Box w={"100%"} 
-      className={"bg-secondary"} 
-      mt={20} 
-      borderRadius={"40px"} 
-      py={20}
+  return (
+    <Box
+      w={"100%"}
+      className={"bg-secondary"}
+      mt={20}
+      borderRadius={"40px"}
+      py={{ base: 10, md: 20 }}
       color={"#141414"}
-    > 
-      <Flex                    
-        align={"center"}     
-        justify={"center"}  
-        pl={10}    
-      >
-        <VStack w={"58%"} justify={"start"} align={"start"}>
-          <Typography headingText={headingText} paraWidth={"75%"} headingWidth={"80%"} fontSize={"6xl"} paraText={paraText} />
+    >
+      <Flex align={"center"} justify={"center"} pl={{ base: 5, md: 10 }}>
+        <VStack w={{ md: "58%" }} justify={"start"} align={"start"}>
+          <Typography
+            headingText={headingText}
+            paraWidth={"75%"}
+            headingWidth={{ base: "100%", md: "80%" }}
+            fontSize={{ base: "4xl", md: "6xl" }}
+            paraText={paraText}
+          />
           <Flex justify={"start"} align={"start"}>
-            <Buttons 
-              btnGreentext={btnGreentext} 
+            <Buttons
+              btnGreentext={btnGreentext}
               btngreenLink={btngreenLink}
               bgColor={"white"}
-              btnColor={"#0E563F"} 
-            /> 
+              btnColor={"#0E563F"}
+            />
           </Flex>
         </VStack>
         <Spacer />
