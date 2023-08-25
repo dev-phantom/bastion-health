@@ -5,10 +5,10 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 const Plans = () => {
     
   return ( 
-    <SimpleGrid columns={[2, null, 3]} spacing="40px" mt={20}>
+    <SimpleGrid columns={[1, 1, 2, 3]} spacing="40px" mt={20}>
       {plans.map((plan) => {
         return(
-          <Box key={plan.id} bg={plan.bgColor} w={"full"} px={10} pt={5} h={"500px"} borderRadius={"10px"}>
+          <Box key={plan.id} bg={plan.bgColor} w={"full"} px={10} pt={5} h={{base:"400px", md:"500px"}} borderRadius={"10px"}>
             <Heading 
               as={"h3"} 
               color={plan.color}

@@ -39,6 +39,7 @@ const Main = ({ imgLink,
             imgAlt={imgAlt}
             width={400}
             height={400}
+            className={"mt-10 md:mt-0"}
           />
         </Flex>
       </Flex>
