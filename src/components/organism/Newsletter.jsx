@@ -13,7 +13,7 @@ const Newsletter = ({headingText, paraText}) => {
       align={"center"}
       borderRadius={"20px"}
       my={20}
-      px={{ base: 8, md: 0 }}
+      px={{ base: 4, md: 0 }}
     >
       <Flex flexDirection={"column"} justify={"center"} align={"center"}>
         <VStack>
