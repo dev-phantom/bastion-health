@@ -21,18 +21,18 @@ const ImageSlider = () => {
               backgroundRepeat={"no-repeat"}
               
               backgroundSize={"cover"}
-              height={"550px"}
+              height={{base:"400px", md:"550px"}}
               align={"center"}
               justify={"center"}
-              width={"402px"}
+              width={{base:"200px", md:"402px"}}
                     
             >
-              <Flex color={"white"} bgGradient={"linear(to-r, blackAlpha.600, transparent)"} h={"full"} flexDirection={"column"} justifyContent={"center"} align={"center"} px={14}>
+              <Flex color={"white"} bgGradient={"linear(to-r, blackAlpha.600, transparent)"} h={"full"} flexDirection={"column"} justifyContent={"center"} align={"center"} px={{base:7, md:14}}>
                 <Heading 
-                  py={10}
+                  py={{base:5,md:10}}
                   textAlign={"center"}
                   fontFamily={"heldane"} 
-                  fontSize={"30px"}
+                  fontSize={{base:"27px", md:"30px"}}
                   
                   fontWeight={"normal"}
                 >
