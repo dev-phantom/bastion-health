@@ -1,8 +1,6 @@
 import {
-  Flex,
   Box,
   SimpleGrid,
-  Grid,
   VStack,
   Text,
   HStack
