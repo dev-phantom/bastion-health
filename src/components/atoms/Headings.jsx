@@ -9,7 +9,7 @@ const Headings = ({headingText, fontSize, headingTextAlign, headingWidth, props}
         
         textAlign={headingTextAlign} 
         fontSize={fontSize} 
-        lineHeight={{md:"80px"}} 
+        lineHeight={{base:"45px", md:"80px"}} 
         w={headingWidth} 
         fontFamily={"heldane"} 
         className={"font-primary"}
