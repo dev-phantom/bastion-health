@@ -1,8 +1,6 @@
 import {
-  Flex,
   Box,
   SimpleGrid,
-  Grid,
   VStack,
   Text,
   HStack
@@ -15,8 +13,13 @@ const Blogs = () => {
     <SimpleGrid columns={[1, 1, 2, 3]} spacing="40px" mt={20}>
       {blogs.map((blog) => {
         return (
-          <Box as={"a"} key={blog.id} href={"/Blog/" + blog.id}>
-            <VStack w={"350px"} justify={"start"} align={"start"}>
+          <Box as={"a"} key={blog.id} href={"/Blog/" + blog.id} w={"full"}>
+            <VStack
+              w={{ base: "270px", md: "350px" }}
+              display={"flex"}
+              justify={{ base: "center", md: "start" }}
+              align={{ base: "center", md: "start" }}
+            >
               <Images
                 imgAlt={"blogImg"}
                 imgLink={blog.blogImg}

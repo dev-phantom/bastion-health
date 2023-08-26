@@ -6,10 +6,10 @@ import DefaultLayout from "@/layout/defaultLayout";
 const Blog = () => {
   return (
     <DefaultLayout>
-      <Box gap={8}>
+      <Box gap={{base:4, md:8}}>
         <Heading
           pt={10}
-          px={{base:10, md: 40 }}
+          px={{base:5, sm:10, md: 40 }}
           textAlign={"center"}
           fontFamily={"heldane"}
           fontSize={{base:"30px", md:"64px"}}
