@@ -9,7 +9,7 @@ const Buttons = ({btnAltLink,
   btnVisibility 
 }) => {
   return ( 
-    <HStack gap={{base:5, md:10}} pt={1}>
+    <HStack gap={{base:3, md:10}} pt={1}>
       <Button 
         as={"a"} 
         borderRadius={"100px"} 

@@ -22,7 +22,7 @@ const SectionTwo = (
             headingText={headingText}
             paraWidth={"75%"}
             headingWidth={{base:"100%", md:"80%"}}
-            fontSize={{ base: "4xl", md: "6xl" }}
+            fontSize={{ base: "3xl", md: "6xl" }}
             paraText={paraText}
           />
           <Flex justify={"start"} align={"start"}>
